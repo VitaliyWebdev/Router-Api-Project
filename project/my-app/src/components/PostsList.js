@@ -12,13 +12,13 @@ export default function PostsList() {
     useEffect(async () => {
         const data = await getData('posts')
         dispatch({type: SET_POSTS, payload: data})
-    }, [])
+    }, [posts])
 
 
     return (
         <div className='d-flex user-list col-5'>
             <ul className='user-box'>
-                <Link to='/posts/newPost'>
+                <Link to='/posts/id/new'>
                     <button type="button"
                             className="btn btn-dark btn-lg">
                         Create New Post

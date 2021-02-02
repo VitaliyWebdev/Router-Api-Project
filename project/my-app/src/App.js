@@ -16,10 +16,10 @@ export default function App() {
                 </Route>
                 <Route exact path='/posts'>
                     <PostsList/>
-
                 </Route>
-                <Route path='/posts/:id' component={PostDetail}/>
-                <Route path='/posts/:newPost' component={NewPost}/>
+                <Route exact path='/posts/:id' component={PostDetail}/>
+                <Route exact path={'/posts/:id/new'} component={NewPost}/>
+
 
 
             </Switch>
