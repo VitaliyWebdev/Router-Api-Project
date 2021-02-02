@@ -1,0 +1,16 @@
+.user-list{
+  background-color: lightcoral;
+  margin:50px auto;
+}
+li{
+  list-style: none;
+  font-size: 22px;
+}
+h1{
+  text-align: center;
+}
+.details-box{
+  text-align: center;
+  background-color: chocolate;
+  margin-top: 60px;
+}
