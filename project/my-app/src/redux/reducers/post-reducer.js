@@ -9,12 +9,11 @@ export const postReducer = (state = initialState, action) => {
         case SET_POSTS :return {...state, posts: action.payload}
         case SET_CHOSEN_POST : return {...state,posts: action.payload}
         case CREATE_POST :{
-            console.log(state,'bef')
-            const posts = [...state.posts];
-            const newPost = action.payload;
-            posts.push(newPost);
-            console.log(...state,'aft')
-            return {...state,posts};
+
+            const {posts} = state;
+            const newPosts = [...posts,action.payload];
+
+            return {...state,posts:newPosts};
 
         }
 

@@ -9,11 +9,15 @@ export default function NewPost() {
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
+        console.log(e.target);
+
         const newPost = {
             id: new Date().getTime(),
-            title: e.target[1].value,
-            body: e.target[2].value
+            title: e.target[0].value,
+            body: e.target[1].value
         }
+        console.log('newPost');
+        console.log(newPost);
         dispatch({type: CREATE_POST, payload: newPost})
         // postData({})
     }
