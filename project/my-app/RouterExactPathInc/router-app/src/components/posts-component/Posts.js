@@ -32,13 +32,13 @@ export default function Posts() {
 
         <div className="card">
             <h3 className="card-header post-title">Posts with user Id: {id}</h3>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
+            <button type="button" className="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
                 Huge modal
             </button>
 
-            <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myHugeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
+            <div className="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myHugeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-xl">
+                    <div className="modal-content">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, at.
                     </div>
                 </div>
